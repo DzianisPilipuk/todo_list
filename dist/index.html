@@ -7,31 +7,34 @@
     <title>ToDo List</title>
 
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="add-task-form-screen" id="add_book_form_screen">
-      <div class="input-wrapper">
-        <label for="task_name">Name</label>
-        <input type="text" name="task_name" id="task_name" />
+      <div class="add-task-form-wrapper">
+        <div class="input-wrapper">
+          <label for="task_name">Name</label>
+          <input type="text" name="task_name" id="task_name" />
+        </div>
+        <div class="input-wrapper">
+          <label for="task_description">Description</label>
+          <input type="text" name="task_description" id="task_description" />
+        </div>
+        <div class="input-wrapper">
+          <label for="due_date">Due date</label>
+          <input type="date" name="due_date" id="due_date" />
+        </div>
+        <div class="input-wrapper">
+          <label for="task_priority">Priority</label>
+          <select name="task_priority" id="task_priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+            <option value="none" selected>None</option>
+          </select>
+        </div>
+        <button id="add_task_button">Add task</button>
       </div>
-      <div class="input-wrapper">
-        <label for="task_description">Description</label>
-        <input type="text" name="task_description" id="task_description" />
-      </div>
-      <div class="input-wrapper">
-        <label for="due_date">Due date</label>
-        <input type="date" name="due_date" id="due_date" />
-      </div>
-      <div class="input-wrapper">
-        <label for="task_priority">Priority</label>
-        <select name="task_priority" id="task_priority">
-          <option value="high">High</option>
-          <option value="medium">Medium</option>
-          <option value="low">Low</option>
-          <option value="none" selected>None</option>
-        </select>
-      </div>
-      <button id="add_task_button">Add task</button>
     </div>
   </body>
 </html>

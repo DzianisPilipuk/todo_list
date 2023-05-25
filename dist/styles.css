@@ -30,16 +30,19 @@ body {
 }
 
 /* add taks form */
-.add-task-form-screen {
+.task-form-screen {
   position: fixed;
+  top: 0px;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(1px);
+  visibility: hidden;
 }
 
-.add-task-form-wrapper {
+.task-form-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;

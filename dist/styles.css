@@ -1,6 +1,10 @@
 :root {
   --grey-color: #9b9b9b;
   --white: #ffffff;
+  --high-priority-task: #ff0000;
+  --medium-priority-task: #ffeb3b;
+  --low-priority-task: #57ffab;
+  --none-priority-task: #aae7ff;
 }
 
 body {
